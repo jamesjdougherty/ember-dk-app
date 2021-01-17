@@ -1,18 +1,11 @@
-<div class="container">
-  <!--start of body-container-->
-  <h2>Quote Yourself</h2>
-  <div class="journal">
-    <h5>Coming soon!</h5>
-    <aside style="padding: 1em;">
-      <i>...</i>
-    </aside>
-    <p>
-      Check back shortly for DK quoting details. Thanks for your patience.
-    </p>
-  </div>
+{{!-- <h1>List of Quotes</h1>
 
-
-  <aside class="page-top">
-    <a href="#top">Up Up and AWAY!</a>
-  </aside>
-</div>
+<ul>
+  {{#each @model as |quote|}}
+    <li>{{quote}}</li>
+  {{/each}}
+</ul> --}}
+<Quotes
+  @title="List of Quotes"
+  @quote={{@model}}
+/>
